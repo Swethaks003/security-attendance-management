@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <div class="home-container">
+        <h1>Security Management System</h1>
+        
+        <!-- Login Button -->
+        <button id="loginButton">Login</button>
+
+        <!-- Office Details -->
+        <div class="office-details">
+            <h2>Office Details</h2>
+            <p>Our office is located at:</p>
+            <p>123 Security Lane, Coimbatore North, Tamil Nadu, India</p>
+            <p>Office Hours: Monday to Friday, 9 AM to 6 PM</p>
+        </div>
+
+        <!-- Images -->
+        <div class="images">
+            <h2>Gallery</h2>
+            <img src="./OIP (1).jpg" alt="Office Image 1">
+           
+        </div>
+
+        <!-- About Section -->
+        <div class="about-container">
+            <h2>About</h2>
+            <p>This system helps manage security personnel by tracking their attendance through selfies and location data. It ensures that security personnel are present at their designated locations and provides a reliable method for attendance verification.</p>
+        </div>
+    </div>
+
+    <div class="login-container" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+          
+        </form>
+    </div>
+
+    <div class="upload-container" style="display: none;">
+        <h2>Upload Selfie</h2>
+        <input type="file" id="selfie" accept="image/*" required>
+        <button id="uploadButton">Upload</button>
+    </div>
+
+    <div class="location-container" style="display: none;">
+        <h2>Track Location</h2>
+        <button id="locationButton">Get Location</button>
+        <div id="map"></div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
